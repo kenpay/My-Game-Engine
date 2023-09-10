@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sceneManager>
+
+	<backgroundColor>
+		<r>0.0</r>
+		<g>0.0</g>
+		<b>0.0</b>
+	</backgroundColor>
+
+	
+	
+	<cameras>
+		<camera id="1">
+			<position>
+				<x>26.3</x>
+				<y>49.5</y>
+				<z>3.1</z>
+			</position>
+			<target>
+				<x>24.3</x>
+				<y>47.5</y>
+				<z>5.1</z>
+			</target>
+			<up>
+				<x>0.0</x>
+				<y>1.0</y>
+				<z>0.0</z>
+			</up>
+			<translationSpeed>10</translationSpeed>
+			<rotationSpeed>1</rotationSpeed>
+			<fov>45</fov>
+			<near>0.2</near>
+			<far>10000</far>
+		</camera>
+		<!-- eventual si alte cameras -->
+	</cameras>
+	<activeCamera>1</activeCamera>
+
+	
+	<objects>
+		<object id="1">
+			<model>1</model><!-- id model -->
+			<shader>10</shader><!-- id shader -->
+			<type>normal</type>
+			<blend>false</blend>
+			<name>Crocodil_verde</name><!-- optional -->
+			<textures>
+				<texture id="4"/>
+			</textures>
+			<position><!-- translatia -->
+				<x>0</x>
+				<y>2</y>
+				<z>25</z>
+			</position>
+			<rotation>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</rotation>
+			<scale>
+				<x>1.0</x>
+				<y>1.0</y>
+				<z>1.0</z>
+			</scale>
+			<trajectory type="linear" iteration="infinite" direction="alternate">
+			<!-- startPoint e chiar Pos -->
+				<endPoint>
+					<x>0.0</x>
+					<y>1.0</y>
+					<z>0.0</z>				
+				</endPoint>
+				<speed>1.0</speed>
+			</trajectory>
+			<lights>
+				<light>1</light>
+			</lights>
+		</object>
+		
+		<object id="3">
+			<model>1</model><!-- id model -->
+			<shader>10</shader><!-- id shader -->
+			<type>character</type>
+			<blend>false</blend>
+			<name>Ionut</name><!-- optional -->
+			<textures>
+				<texture id="4"/>
+			</textures>
+			<position><!-- translatia -->
+				<x>0</x>
+				<y>73</y>
+				<z>25</z>
+			</position>
+			<rotation>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</rotation>
+			<scale>
+				<x>1.0</x>
+				<y>1.0</y>
+				<z>1.0</z>
+			</scale>
+			<lights>
+				<light>1</light>
+			</lights>
+		</object>
+		
+		
+		<object id="8">
+			<model>generated</model>
+			<shader>8</shader>
+			<type>terrain</type>
+			<wired/>
+			<blend>false</blend>
+			<name>Teren</name>
+			<color>
+				<r>1.0</r>
+				<g>1.0</g>
+				<b>1.0</b>
+			</color>
+			<textures>
+				<texture id="14"/>
+				<texture id="15"/>
+				<texture id="16"/>
+				<texture id="17"/>
+			</textures>
+			<position>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</position>
+			<rotation>
+				<x>0.0</x>
+				<y>0.0</y>
+				<z>0.0</z>
+			</rotation>
+			<scale>
+				<x>1.0</x>
+				<y>1.0</y>
+				<z>1.0</z>
+			</scale>
+			<dimCel>
+				200
+			</dimCel>
+			<nrCelule>4</nrCelule>
+			<inaltimi>
+			<r>15</r>
+			<g>-1</g>
+			<b>-5</b>
+			</inaltimi>
+			<offsetY>0.0</offsetY>
+			<lights>
+				<light>1</light>
+			</lights>
+		</object>
+		
+		<object id="4">
+			<model>3</model>
+			<shader>7</shader>
+			<type>fire</type>
+			<blend>true</blend>
+			<name>Foc</name>
+			<color>
+				<r>1.0</r>
+				<g>1.0</g>
+				<b>1.0</b>
+			</color>
+			<textures>
+				<texture id="1"/>
+				<texture id="2"/>
+				<texture id="3"/>
+			</textures>
+			<position>
+				<x>0</x>
+				<y>1</y>
+				<z>0</z>
+			</position>
+			<rotation>
+				<x>0.0</x>
+				<y>0.0</y>
+				<z>0.0</z>
+			</rotation>
+			<scale>
+				<x>50</x>
+				<y>50</y>
+				<z>50</z>
+			</scale>
+			<dispMax>0.2</dispMax>
+			<lights>
+				<light>1</light>
+			</lights>
+		</object>
+		
+				
+		<object id="9">
+			<model>4</model>
+			<shader>1</shader>
+			<type>skybox</type>
+			<blend>false</blend>
+			<name>SkyBox</name>
+			<color>
+				<r>1.0</r>
+				<g>1.0</g>
+				<b>1.0</b>
+			</color>
+			<textures>
+				<texture id="6"/>
+			</textures>
+			<position>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</position>
+			<rotation>
+				<x>3.14</x>
+				<y>0.0</y>
+				<z>0.0</z>
+			</rotation>
+			<scale>
+				<x>100000.0</x>
+				<y>100000.0</y>
+				<z>100000.0</z>
+			</scale>
+			<lights>
+				<light>1</light>
+			</lights>
+		</object>
+		
+	</objects>
+	
+	<razaMica>70</razaMica>
+	<razaMare>200</razaMare>
+	<fogColor>
+		<r>1.0</r>
+		<g>1.0</g>
+		<b>1.0</b>
+	</fogColor>
+
+	<ambientalLight>
+		<color>
+			<r>1.0</r>
+			<g>1.0</g>
+			<b>1.0</b>
+		</color>
+		<ratio>0.1</ratio>
+	</ambientalLight>
+	
+	<lights>
+		<light id="1">
+			<diffuseColor>
+				<r>1.0</r>
+				<g>1.0</g>
+				<b>1.0</b>
+			</diffuseColor>
+			<specularColor>
+				<r>1.0</r>
+				<g>1.0</g>
+				<b>1.0</b>
+			</specularColor>
+			<position>
+				<x>20.5</x>
+				<y>10.0</y>
+				<z>21.22</z>
+			</position>
+			<type>point</type>
+			<specPower>0.8</specPower>
+		</light>
+	</lights>
+	
+</sceneManager>
